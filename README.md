@@ -21,3 +21,5 @@ chmod 777 /etc/x-ui
 sudo chown www-data:www-data /etc/x-ui-english/x-ui-english.db
 
 service apache2 restart
+
+x-ui restart
