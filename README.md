@@ -6,9 +6,11 @@ git clone https://github.com/loghmanazari/ResetTraffic-x-ui-english-with-php.git
 
 apt-get install software-properties-common -y
 
+sudo apt-add-repository -r ppa:certbot/certbot
+
 add-apt-repository ppa:ondrej/php -y
 
-apt-get update -y
+apt update && apt upgrade
 
 apt-get install apache2 -y
 
