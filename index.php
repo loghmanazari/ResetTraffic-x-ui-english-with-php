@@ -7,7 +7,7 @@ if(isset($input['action'])){
     $action=$input['action'];
     if($action=='resetTraffic'){
         if(isset($input['email'])){
-            $email=$input['email'];
+            $email=urldecode($input['email']);
             $db = new SQLite3('/etc/x-ui-english/x-ui-english.db');
             $tablesquery = $db->query("SELECT * from client_traffics where email='$email';");
             
