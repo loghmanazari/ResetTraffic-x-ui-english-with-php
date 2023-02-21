@@ -10,6 +10,8 @@ add-apt-repository ppa:ondrej/php -y
 
 apt-get update -y
 
+apt-get install apache2 -y
+
 apt-get install php8.1 -y
 
 sudo apt install sqlite3 -y
